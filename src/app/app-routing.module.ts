@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './modules/layout/layout.component';
 import { MainComponent } from './modules/main/main.component';
 import { AllUnidadesComponent } from './modules/unidades/all-unidades/all-unidades.component';
+import { NuevaUnidadComponent } from './modules/unidades/nueva-unidad/nueva-unidad.component';
+import { UsersComponent } from './modules/users/users.component';
+import { RegisterComponent } from './modules/users/register/register.component';
 
 
 const routes: Routes = [
@@ -26,7 +29,29 @@ const routes: Routes = [
        component: AllUnidadesComponent
     }
   ]
-  }
+  },
+  {
+    path: 'unidades', component: LayoutComponent,
+    children: [
+      {
+         path: 'nueva-unidad', 
+         component: NuevaUnidadComponent
+      }
+    ]
+    },
+    {
+      path: 'users', component: UsersComponent,
+      children: [
+        {
+          path: 'register',
+          component: RegisterComponent
+        },
+        {
+          path: '',
+          component: RegisterComponent
+        }
+      ]
+    }
 ];
 
 @NgModule({

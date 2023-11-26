@@ -20,12 +20,12 @@ ngOnInit() {
                 
                 {
                     label: 'Todas',
-                    routerLink: 'unidades/all-unidades',
+                    routerLink: '/unidades/all-unidades',
                     icon: 'pi pi-fw pi-database'
                 },
                 {
                     label: 'Nueva',
-                    routerLink: 'unidades/nueva-unidad',
+                    routerLink: '/unidades/nueva-unidad',
                     icon: 'pi pi-fw pi-plus',
                    
                 }
@@ -59,6 +59,7 @@ ngOnInit() {
             items: [
                 {
                     label: 'New',
+                    routerLink: '/users/register',
                     icon: 'pi pi-fw pi-user-plus'
                 },
                 {
