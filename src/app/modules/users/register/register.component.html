@@ -1,1 +1,22 @@
-<p>register works!</p>
+<h4>Register</h4>
+<form  name="editForm" role="form" [formGroup]="editForm" (ngSubmit)="save()">
+
+   
+   
+   
+    <div class="field">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" formControlName="email" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full" />
+    </div>
+   <br><br>
+    <div class="field">
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password" formControlName="password" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"/>
+    </div>
+
+    <br><br>
+    <div class="card flex justify-content-center">
+        <p-button label="Submit"></p-button>
+    </div>
+  
+    </form>    

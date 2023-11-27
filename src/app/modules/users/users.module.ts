@@ -6,7 +6,9 @@ import { UsersComponent } from './users.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
 
 
 @NgModule({
@@ -18,7 +20,11 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     UsersRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+    InputTextModule,
+    ButtonModule
    
   ],
   exports:[

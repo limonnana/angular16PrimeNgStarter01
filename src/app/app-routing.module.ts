@@ -6,6 +6,7 @@ import { AllUnidadesComponent } from './modules/unidades/all-unidades/all-unidad
 import { NuevaUnidadComponent } from './modules/unidades/nueva-unidad/nueva-unidad.component';
 import { UsersComponent } from './modules/users/users.component';
 import { RegisterComponent } from './modules/users/register/register.component';
+import { LoginComponent } from './modules/users/login/login.component';
 
 
 const routes: Routes = [
@@ -47,8 +48,8 @@ const routes: Routes = [
           component: RegisterComponent
         },
         {
-          path: '',
-          component: RegisterComponent
+          path: 'login',
+          component: LoginComponent
         }
       ]
     }

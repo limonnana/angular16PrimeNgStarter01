@@ -63,7 +63,8 @@ ngOnInit() {
                     icon: 'pi pi-fw pi-user-plus'
                 },
                 {
-                    label: 'Delete',
+                    label: 'Login',
+                    routerLink: '/users/login',
                     icon: 'pi pi-fw pi-user-minus'
                 },
                 {
